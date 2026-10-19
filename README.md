@@ -7,7 +7,7 @@
 <br>
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-00F5FF?style=for-the-badge&logo=googlechrome&logoColor=0D0B14&labelColor=0D0B14)](https://manantsoa.finaritra.workers.dev)
-[![GitHub](https://img.shields.io/badge/GITHUB-E83BA8?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0B14)](https://github.com/Lorem-Ipsum-Dev)
+[![GitHub](https://img.shields.io/badge/GITHUB-E83BA8?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0B14)](https://github.com/tiikoun)
 [![Status](https://img.shields.io/badge/STATUS-ONLINE-39FF14?style=for-the-badge&labelColor=0D0B14)](#)
 
 </div>
@@ -74,14 +74,14 @@ I care about clean architecture, reliable backends, creative UI, and reproducibl
   <tr>
     <td align="center" width="50%">
       <img
-        src="https://github-stats-extended.vercel.app/api?username=Lorem-Ipsum-Dev&show_icons=true&theme=radical&hide_border=true&bg_color=0D0B14&title_color=00F5FF&icon_color=E83BA8&text_color=C9D1D9"
+        src="https://github-stats-extended.vercel.app/api?username=tiikoun&show_icons=true&theme=radical&hide_border=true&bg_color=0D0B14&title_color=00F5FF&icon_color=E83BA8&text_color=C9D1D9"
         width="100%"
         alt="GitHub Stats"
       />
     </td>
     <td align="center" width="50%">
       <img
-        src="https://github-stats-extended.vercel.app/api/top-langs/?username=Lorem-Ipsum-Dev&layout=compact&theme=radical&hide_border=true&bg_color=0D0B14&title_color=00F5FF&text_color=C9D1D9"
+        src="https://github-stats-extended.vercel.app/api/top-langs/?username=tiikoun&layout=compact&theme=radical&hide_border=true&bg_color=0D0B14&title_color=00F5FF&text_color=C9D1D9"
         width="100%"
         alt="Top Languages"
       />
@@ -90,7 +90,7 @@ I care about clean architecture, reliable backends, creative UI, and reproducibl
 </table>
 
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Lorem-Ipsum-Dev&theme=radical&hide_border=true&background=0D0B14&ring=00F5FF&fire=E83BA8&currStreakLabel=00F5FF" alt="GitHub Streak" width="55%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=tiikoun&theme=radical&hide_border=true&background=0D0B14&ring=00F5FF&fire=E83BA8&currStreakLabel=00F5FF" alt="GitHub Streak" width="55%" />
 
 </div>
 
@@ -101,7 +101,7 @@ I care about clean architecture, reliable backends, creative UI, and reproducibl
 ### 🌐 Connect
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-0D0B14?style=flat-square&logoColor=00F5FF)](https://manantsoa.finaritra.workers.dev)
-[![GitHub](https://img.shields.io/badge/⚡_Repositories-0D0B14?style=flat-square&logoColor=E83BA8)](https://github.com/Lorem-Ipsum-Dev)
+[![GitHub](https://img.shields.io/badge/⚡_Repositories-0D0B14?style=flat-square&logoColor=E83BA8)](https://github.com/tiikoun)
 
 <sub>© Finaritriniaina Manantsoa · Built with code, curiosity & a little chaos.</sub>
 
