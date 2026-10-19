@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="Finaritriniaina Manantsoa - Full Stack Software Developer">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05010F"/>
+      <stop offset="0.65" stop-color="#0A0616"/>
+      <stop offset="1" stop-color="#150A26"/>
+    </linearGradient>
+
+    <radialGradient id="hzGlow" cx="0.5" cy="1" r="1">
+      <stop offset="0" stop-color="#E83BA8" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#E83BA8" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#E83BA8" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="gridGrad" x1="0" y1="190" x2="0" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#00F5FF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#00F5FF" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00F5FF" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#00F5FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="neonC" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neonM" x="-60%" y="-300%" width="220%" height="700%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neonG" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .scan { animation: scanMove 7s linear infinite; }
+      @keyframes scanMove {
+        0%   { transform: translateY(-70px); }
+        100% { transform: translateY(330px); }
+      }
+      .cur { animation: blink 1.05s steps(1) infinite; }
+      @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+      .gr { opacity: 0; animation: glitchR 4.2s steps(1) infinite; }
+      .gc { opacity: 0; animation: glitchC 4.2s steps(1) infinite; }
+      @keyframes glitchR {
+        0%, 87%, 100% { opacity: 0; transform: translate(0, 0); }
+        88%           { opacity: 0.9; transform: translate(5px, -2px); }
+        90%           { opacity: 0.6; transform: translate(-3px, 2px); }
+        92%           { opacity: 0.9; transform: translate(3px, 1px); }
+        94%           { opacity: 0; }
+      }
+      @keyframes glitchC {
+        0%, 87%, 100% { opacity: 0; transform: translate(0, 0); }
+        88%           { opacity: 0.85; transform: translate(-5px, 2px); }
+        90%           { opacity: 0.7; transform: translate(4px, -1px); }
+        92%           { opacity: 0.85; transform: translate(-2px, -2px); }
+        94%           { opacity: 0; }
+      }
+      .flick { animation: flick 5.6s linear infinite; }
+      @keyframes flick {
+        0%, 96%, 100% { opacity: 1; }
+        97%           { opacity: 0.55; }
+        98%           { opacity: 1; }
+        99%           { opacity: 0.7; }
+      }
+      .tw { animation: twinkle 3.4s ease-in-out infinite; }
+      .tw2 { animation: twinkle 4.6s ease-in-out infinite 1.3s; }
+      @keyframes twinkle { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.7; } }
+      text { user-select: none; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="280" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#C9D1D9">
+    <circle cx="70" cy="40" r="1.4" opacity="0.35"/>
+    <circle cx="150" cy="92" r="1" opacity="0.25"/>
+    <circle cx="240" cy="28" r="1.6" opacity="0.5" class="tw"/>
+    <circle cx="330" cy="66" r="1" opacity="0.3" class="tw2"/>
+    <circle cx="430" cy="22" r="1.2" opacity="0.4"/>
+    <circle cx="545" cy="52" r="1" opacity="0.25" class="tw"/>
+    <circle cx="660" cy="30" r="1.5" opacity="0.45"/>
+    <circle cx="760" cy="70" r="1" opacity="0.3" class="tw2"/>
+    <circle cx="865" cy="36" r="1.3" opacity="0.4"/>
+    <circle cx="960" cy="80" r="1" opacity="0.25"/>
+    <circle cx="1055" cy="26" r="1.6" opacity="0.5" class="tw"/>
+    <circle cx="1140" cy="64" r="1.1" opacity="0.35"/>
+    <circle cx="95" cy="130" r="1" opacity="0.2" class="tw2"/>
+    <circle cx="1105" cy="128" r="1" opacity="0.2"/>
+  </g>
+
+  <!-- horizon glow -->
+  <ellipse cx="600" cy="190" rx="640" ry="70" fill="url(#hzGlow)"/>
+
+  <!-- perspective grid -->
+  <g stroke="url(#gridGrad)" stroke-width="1.2">
+    <line x1="600" y1="190" x2="-300" y2="280"/>
+    <line x1="600" y1="190" x2="-150" y2="280"/>
+    <line x1="600" y1="190" x2="0" y2="280"/>
+    <line x1="600" y1="190" x2="150" y2="280"/>
+    <line x1="600" y1="190" x2="300" y2="280"/>
+    <line x1="600" y1="190" x2="450" y2="280"/>
+    <line x1="600" y1="190" x2="600" y2="280"/>
+    <line x1="600" y1="190" x2="750" y2="280"/>
+    <line x1="600" y1="190" x2="900" y2="280"/>
+    <line x1="600" y1="190" x2="1050" y2="280"/>
+    <line x1="600" y1="190" x2="1200" y2="280"/>
+    <line x1="600" y1="190" x2="1350" y2="280"/>
+    <line x1="600" y1="190" x2="1500" y2="280"/>
+    <line x1="0" y1="192" x2="1200" y2="192"/>
+    <line x1="0" y1="197" x2="1200" y2="197"/>
+    <line x1="0" y1="207" x2="1200" y2="207"/>
+    <line x1="0" y1="219" x2="1200" y2="219"/>
+    <line x1="0" y1="236" x2="1200" y2="236"/>
+    <line x1="0" y1="256" x2="1200" y2="256"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+  </g>
+
+  <!-- horizon line (layered strokes = glow, no zero-bbox filter) -->
+  <g class="flick">
+    <line x1="0" y1="190" x2="1200" y2="190" stroke="#E83BA8" stroke-width="14" opacity="0.14"/>
+    <line x1="0" y1="190" x2="1200" y2="190" stroke="#E83BA8" stroke-width="7" opacity="0.3"/>
+    <line x1="0" y1="190" x2="1200" y2="190" stroke="#E83BA8" stroke-width="2.4"/>
+    <line x1="180" y1="188.2" x2="1020" y2="188.2" stroke="#00F5FF" stroke-width="1.2" opacity="0.85"/>
+    <line x1="180" y1="188.2" x2="1020" y2="188.2" stroke="#00F5FF" stroke-width="4" opacity="0.18"/>
+  </g>
+
+  <!-- HUD corner brackets -->
+  <g stroke="#00F5FF" stroke-width="2" fill="none" filter="url(#neonG)" opacity="0.9">
+    <path d="M18 56 L18 18 L56 18"/>
+    <path d="M1182 56 L1182 18 L1144 18"/>
+    <path d="M18 224 L18 262 L56 262"/>
+    <path d="M1182 224 L1182 262 L1144 262"/>
+  </g>
+
+  <!-- micro labels -->
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12.5" letter-spacing="2">
+    <text x="70" y="35" fill="#39FF14" filter="url(#neonG)">SYS://PROFILE_ONLINE</text>
+    <text x="1130" y="35" text-anchor="end" fill="#39FF14" filter="url(#neonG)">STATUS: ONLINE</text>
+    <text x="70" y="176" fill="#00F5FF" filter="url(#neonG)">&gt; ACCESS_GRANTED</text>
+    <text x="1130" y="176" text-anchor="end" fill="#E83BA8" filter="url(#neonG)">EST.2023 // V2.0.77</text>
+  </g>
+
+  <!-- title: glitch copies -->
+  <g font-family="'Arial Black', 'Arial Bold', Arial, Helvetica, sans-serif" font-size="54" font-weight="900"
+     text-anchor="middle" textLength="950" lengthAdjust="spacingAndGlyphs">
+    <text class="gr" x="600" y="118" fill="none" stroke="#E83BA8" stroke-width="1.4">FINARITRINIAINA MANANTSOA</text>
+    <text class="gc" x="600" y="118" fill="none" stroke="#00F5FF" stroke-width="1.4">FINARITRINIAINA MANANTSOA</text>
+    <text x="600" y="118" fill="#FFFFFF" stroke="#00F5FF" stroke-width="1.2" paint-order="stroke" filter="url(#neonC)">FINARITRINIAINA MANANTSOA</text>
+  </g>
+
+  <!-- subtitle -->
+  <g class="flick">
+    <text x="600" y="153" text-anchor="middle" textLength="640" lengthAdjust="spacing"
+          font-family="Consolas, 'Courier New', monospace" font-size="17" letter-spacing="4"
+          fill="#FF6FD8" filter="url(#neonM)">// FULL STACK SOFTWARE DEVELOPER //<tspan class="cur" fill="#00F5FF">_</tspan></text>
+  </g>
+
+  <!-- scanline -->
+  <rect class="scan" x="0" y="-60" width="1200" height="70" fill="url(#scanGrad)"/>
+</svg>

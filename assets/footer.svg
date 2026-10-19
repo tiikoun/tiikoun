@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="End of transmission">
+  <defs>
+    <linearGradient id="bgF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#150A26"/>
+      <stop offset="0.45" stop-color="#0A0616"/>
+      <stop offset="1" stop-color="#05010F"/>
+    </linearGradient>
+
+    <linearGradient id="gridGradF" x1="0" y1="45" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E83BA8" stop-opacity="0"/>
+      <stop offset="0.4" stop-color="#E83BA8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#E83BA8" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="topGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E83BA8" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#E83BA8" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="neonCF" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+
+    <style>
+      .curF { animation: blinkF 1.05s steps(1) infinite; }
+      @keyframes blinkF { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+      .flickF { animation: flickF 6.2s linear infinite; }
+      @keyframes flickF {
+        0%, 95%, 100% { opacity: 1; }
+        96%           { opacity: 0.5; }
+        97%           { opacity: 1; }
+        98%           { opacity: 0.75; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="120" fill="url(#bgF)"/>
+  <rect width="1200" height="26" fill="url(#topGlow)"/>
+
+  <!-- horizon line (layered strokes = glow, no zero-bbox filter) -->
+  <g class="flickF">
+    <line x1="0" y1="45" x2="1200" y2="45" stroke="#E83BA8" stroke-width="12" opacity="0.14"/>
+    <line x1="0" y1="45" x2="1200" y2="45" stroke="#E83BA8" stroke-width="6" opacity="0.3"/>
+    <line x1="0" y1="45" x2="1200" y2="45" stroke="#E83BA8" stroke-width="2"/>
+    <line x1="240" y1="43.4" x2="960" y2="43.4" stroke="#00F5FF" stroke-width="1" opacity="0.8"/>
+  </g>
+
+  <!-- perspective grid -->
+  <g stroke="url(#gridGradF)" stroke-width="1.1">
+    <line x1="600" y1="45" x2="-300" y2="120"/>
+    <line x1="600" y1="45" x2="-150" y2="120"/>
+    <line x1="600" y1="45" x2="0" y2="120"/>
+    <line x1="600" y1="45" x2="150" y2="120"/>
+    <line x1="600" y1="45" x2="300" y2="120"/>
+    <line x1="600" y1="45" x2="450" y2="120"/>
+    <line x1="600" y1="45" x2="600" y2="120"/>
+    <line x1="600" y1="45" x2="750" y2="120"/>
+    <line x1="600" y1="45" x2="900" y2="120"/>
+    <line x1="600" y1="45" x2="1050" y2="120"/>
+    <line x1="600" y1="45" x2="1200" y2="120"/>
+    <line x1="600" y1="45" x2="1350" y2="120"/>
+    <line x1="600" y1="45" x2="1500" y2="120"/>
+    <line x1="0" y1="47" x2="1200" y2="47"/>
+    <line x1="0" y1="53" x2="1200" y2="53"/>
+    <line x1="0" y1="64" x2="1200" y2="64"/>
+    <line x1="0" y1="78" x2="1200" y2="78"/>
+    <line x1="0" y1="97" x2="1200" y2="97"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+  </g>
+
+  <!-- HUD ticks -->
+  <g stroke="#00F5FF" stroke-width="2" fill="none" filter="url(#neonCF)" opacity="0.85">
+    <path d="M18 20 L18 6 L32 6"/>
+    <path d="M1182 20 L1182 6 L1168 6"/>
+  </g>
+
+  <!-- outro text -->
+  <g font-family="Consolas, 'Courier New', monospace" text-anchor="middle">
+    <text x="600" y="30" font-size="15" letter-spacing="6" fill="#00F5FF" filter="url(#neonCF)" class="flickF">// END OF TRANSMISSION<tspan class="curF">_</tspan></text>
+    <text x="600" y="104" font-size="11.5" letter-spacing="3" fill="#C9D1D9" opacity="0.75">THANKS_FOR_SCROLLING</text>
+  </g>
+</svg>
